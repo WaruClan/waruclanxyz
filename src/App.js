@@ -1,5 +1,4 @@
-//import "./styles/Home.css";
-import {Box, Card, Container, Flex, Heading, Image, SimpleGrid, Spinner,Text } from "@chakra-ui/react";
+import {Box, Card, Container, Flex, Image, SimpleGrid, Spinner,Text } from "@chakra-ui/react";
 import {ConnectWallet, MediaRenderer, useContract, useAddress, useOwnedNFTs } from "@thirdweb-dev/react";
 import waruClan from "./components/waru.png";
 

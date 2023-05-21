@@ -7,7 +7,6 @@ import App from "./App";
 
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { ChakraProvider } from "@chakra-ui/react";
-import ProfilePage from "./profile/address";
 
 //Fichier CSS livré en standard mais désactivé au profit de Chakra
 //import "./styles/globals.css";
@@ -19,7 +18,6 @@ root.render(
     <ThirdwebProvider activeChain="polygon">
       <ChakraProvider>
         <App/>
-        {/* <ProfilePage/> */}
       </ChakraProvider>
     </ThirdwebProvider>
   </React.StrictMode>
