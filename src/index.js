@@ -1,24 +1,33 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
+//import theme from "./theme";
 
 //Desactivation du ReportWebVitalis
 //import reportWebVitals from "./reportWebVitals";
 
 import { ThirdwebProvider } from "@thirdweb-dev/react";
-import { ChakraProvider } from "@chakra-ui/react";
+//import { ChakraProvider } from "@chakra-ui/react";
 
 //Fichier CSS livré en standard mais désactivé au profit de Chakra
-//import "./styles/globals.css";
+import "./styles/globals.css";
+
+// const configChakra = {
+//   useSystemColorMode: false,
+//   initialColorMode: 'dark',
+// }
+
+// const theme = extendTheme(configChakra);
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <ThirdwebProvider activeChain="polygon">
-      <ChakraProvider>
+      {/* <ChakraProvider theme="dark"> */}
+      {/* <ColorModeScript initialColorMode={theme.config.initialColorMode}/> */}
         <App/>
-      </ChakraProvider>
+      {/* </ChakraProvider> */}
     </ThirdwebProvider>
   </React.StrictMode>
 );
